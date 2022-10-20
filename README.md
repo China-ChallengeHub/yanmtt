@@ -27,33 +27,43 @@
 YANMTT is short for Yet Another Neural Machine Translation Toolkit. For a backstory how I ended up creating this toolkit scroll to the bottom of this README. Although the name says that it is yet another toolkit, it was written with the purpose of better understanding of the flow of training, starting from data pre-processing, sharding, batching, distributed training and decoding. There is a significant emphashis on multilingualism and on cross-lingual learning.
 
 **List of features:**
-1. **Basic NMT pre-training, fine-tuning, decoding, visualization** <br>
+
+1.  **Basic NMT pre-training, fine-tuning, decoding, visualization** <br>
     * Distributed, mixed precision, multilingual training.<br>
     * Denoising pre-training in mBART or mT5 style.<br>
     * Fine-tuning your own or official BART-like models like BART, mBART, IndicBART.<br>
     * Joint supervised and unsupervised training using monolingual and parallel corpora.<br>
     * Sentence representation, attention extraction, and scoring translations. <br>
-2. **User Interface**
+    
+2.  **User Interface**
     * GUI to demo and debug models.<br>
     * Select any official huggingface (mBART, IndicBART) or custom model and run it on any of the supported languages.<br>
     * Visualize attention weights at each layer for each head using bertviz.<br>
     * Visualize encoder representations of a set of sentences using tensorflow projector.<br>
-3. **Advanced features**<br>
+    
+3.  **Advanced features**<br>
     * Mixtures-of-experts layers. <br>
     * Tempered softmax training. <br>
     * Softmax calibration. <br>
     * Entropy maximization training.<br>
     * Multi-layer softmax training. <br>
-4. **Light-weight fine-tuning** <br>
+    
+4.  **Light-weight fine-tuning** <br>
     * Adaptor and prompt tuning. <br>
     * Hypercomplex, light-weight adaptors. <br>
     * Eliminate components or layers prior to decoding or fine-tuning. <br>
     * Fine-grained control over what parameters to fine-tune. <br>
+
+
 5. **Model compression** <br>
     * Training compact models from scratch via recurrently stacked layers (ALBART). <br>
     * Distillation of pre-trained and fine-tuned models. <br>
+
+
 6. **Simultaneous NMT** <br>
     * Simulated Wait-k NMT where we train and decode wait-K models or decode full-sentence models using wait-k. <br>
+
+
 7. **Multi-source and Document NMT** <br>
     * Vanilla multi-source with two input sentences belonging to different languages. <br>
     * Document level NMT where one input is the current sentence and the other one is the context. <br>
